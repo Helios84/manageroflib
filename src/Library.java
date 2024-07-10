@@ -42,7 +42,7 @@ public class Library {
 
         if (book != null && borrower != null && !book.isBorrowed()) {
             book.borrowBook();
-            System.out.println(borrower.getName() + " взял(а)/ took " + book.getTitle());
+            System.out.println(  "------------" + borrower.getName() + " взял(а)/ took " + book.getTitle() + "------------");
         } else {
             System.out.println("---------Невозможно взять книгу / It is impossible to take this book.---------");
         }
@@ -52,7 +52,7 @@ public class Library {
         Book book = findBook(title);
         if (book != null && book.isBorrowed()) {
             book.returnBook();
-            System.out.println(book.getTitle() + " возвращена / is returned.");
+            System.out.println( "------------" + book.getTitle() + " возвращена / is returned." + "------------");
         } else {
             System.out.println("---------Невозможно вернуть книгу / It is impossible to return this book.---------");
         }
